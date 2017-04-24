@@ -4,9 +4,8 @@ import java.util.*;
 public class Sort {
   
   public void bubbleSort(int[] array) {
-    int length = array.length;
     
-    for (int k = 0; k < length; k++) {
+    for (int k = 0; k < array.length; k++) {
       boolean swapped = false;
       for (int i = 0; i < length - 1; i++) {
         if (array[i] > array[i + 1]) {
