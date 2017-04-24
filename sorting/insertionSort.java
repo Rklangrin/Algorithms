@@ -1,6 +1,8 @@
-public class Sort {
+package com.landgren;
+
+public class InsertionSort {
   
-  public void selectionSort(int[] array) {
+  public void sort(int[] array) {
     int temp;
 
     for (int i = 1; i < array.length; i++) {
@@ -17,24 +19,18 @@ public class Sort {
         }
       }
     }
-    
-  }
-  
-  
-  public void printArray(int[] array) {
-    for (int i = 0; i < array.length; i++) {
-      System.out.print(array[i] + " ");
-    }
   }
   
   public static void main(String[] args) {
 
-    Sort sort = new Sort();
+    InsertionSort sort = new InsertionSort();
     int[] array = { 9, 8, 2, 4, 8, 100, 4, 2, 55, 6, 8, 15, 5, 19, 53, 9, 25 };
     
-    sort.selectionSort(array);
+    sort.sort(array);
     
-    sort.printArray(array);
+    for (int i = 0; i < array.length; i++) {
+        System.out.print(array[i] + " ");
+    }
     
   }
 }
