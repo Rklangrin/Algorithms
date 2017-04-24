@@ -17,7 +17,7 @@ public class SelectionSort {
       if (index != k) {
         array[index] = array[k];
         array[k] = min;
-      };
+      }
       
     }
   }
