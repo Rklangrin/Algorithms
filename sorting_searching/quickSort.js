@@ -4,6 +4,7 @@ let quickSort = (arr) => {
   }
   
   let pivot = arr[arr.length -1];
+  // pivot doesn't have to be the last element in the array. 
   let left = [];
   let right = [];
   
