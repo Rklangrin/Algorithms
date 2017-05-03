@@ -1,10 +1,12 @@
 let arr = [100, 6, 2, 1, 29, 10, 4, 3, 22, 1, 7, 7, 100, 15000];
 
 function mergeSort(array) {
-  let length = array.length;
+  // base case
   if (length === 1){
     return array;
   }
+
+  let length = array.length;
   let mid = length/2;
   
   let leftSorted = mergeSort(array.slice(0, mid));
