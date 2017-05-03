@@ -26,4 +26,10 @@ let quickSort = (arr) => {
 console.log(quickSort([1, 2, 4, 9, 3, 7, 5, 3, 4]))
 
 
-// Worst case O(n^2) because if a sorted or nearly sorted array was passed to quickSort, and the pivot was the last number in the array, then it would have to compare every number against every other (or nearly every other if it is nearly sorted) number in the array.
+// Worst case O(n^2) because if a sorted or nearly sorted array was passed to quickSort, 
+// and the pivot was the last number in the array, then it would have to compare every number against every other number in the array.
+// (or nearly every other if it is nearly sorted) 
+
+// One way to get around this is to implement "quickSort 3," which more selectively chooses a pivot.
+// You compare the first, last, and middle number in an array 
+// then pick the number to be the pivot that is the middle of those three numbers.
