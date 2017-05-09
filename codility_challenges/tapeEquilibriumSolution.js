@@ -26,5 +26,9 @@ function solution(A) {
     }
     
     return minDiff;
-    
 }
+
+
+// Time Complexity:  O(n)
+
+
